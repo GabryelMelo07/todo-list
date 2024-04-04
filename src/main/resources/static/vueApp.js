@@ -1,6 +1,6 @@
 const { createApp, ref, onMounted } = Vue;
 
-const apiUrl = 'http://ec2-100-24-99-27.compute-1.amazonaws.com:8080/todo';
+const apiUrl = 'http://ec2-44-213-103-70.compute-1.amazonaws.com:8080/todo';
 
 createApp({
     setup() {
