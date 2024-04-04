@@ -68,7 +68,7 @@
                 <nav class="d-flex justify-content-center" aria-label="Page navigation example">
                     <ul class="pagination">
                         <li class="page-item">
-                            <a class="page-link" @click="loadPage(0)" aria-label="First">
+                            <a class="page-link" :class="{ 'disabled': currentPage === 0 }" @click="loadPage(0)" aria-label="First">
                                 <span aria-hidden="true">&laquo;&laquo;</span>
                             </a>
                         </li>
@@ -87,7 +87,7 @@
                             </a>
                         </li>
                         <li class="page-item">
-                            <a class="page-link" @click="loadPage(totalPages - 1)" aria-label="Last">
+                            <a class="page-link" :class="{ 'disabled': currentPage === 0 }" @click="loadPage(totalPages - 1)" aria-label="Last">
                                 <span aria-hidden="true">&raquo;&raquo;</span>
                             </a>
                         </li>
